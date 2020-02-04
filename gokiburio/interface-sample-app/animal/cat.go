@@ -1,21 +1,21 @@
 package animal
 
-type Cat struct {
-	value AnimalStatus
+type CatValue struct {
+	Value AnimalStatus
 }
 
-func (c *Cat) GetName() string {
-	return c.value.Name
+func (c *CatValue) GetName() string {
+	return c.Value.Name
 }
 
-func (c *Cat) GetAge() int {
-	return c.value.Age
+func (c *CatValue) GetAge() int {
+	return c.Value.Age
 }
 
-func (c *Cat) GetType() string {
-	return c.value.Type
+func (c *CatValue) GetType() string {
+	return c.Value.Type
 }
 
-func (c *Cat) MakeSound() string {
+func (c *CatValue) MakeSound() string {
 	return "ニャオ"
 }

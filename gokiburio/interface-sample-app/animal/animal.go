@@ -15,10 +15,9 @@ type Animal interface {
 	GetType() string
 }
 
-func (a *AnimalStatus) String() string {
-	return fmt.Sprintf("Name: %s, Age: %s, Type: %s, Sount: %s", a.GetName(), a.GetAge(), a.GetType(), a.MakeSount())
-}
-
 func GetAnimalStatus(a Animal) {
-	fmt.Println(a)
+	fmt.Sprintln("Name: %s", a.GetName())
+	fmt.Sprintln("Age: %d", a.GetAge())
+	fmt.Sprintln("Type: %s", a.GetType())
+	fmt.Sprintln("Sount: %s", a.MakeSound())
 }
