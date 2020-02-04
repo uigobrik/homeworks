@@ -16,8 +16,8 @@ type Animal interface {
 }
 
 func GetAnimalStatus(a Animal) {
-	fmt.Sprintln("Name: %s", a.GetName())
-	fmt.Sprintln("Age: %d", a.GetAge())
-	fmt.Sprintln("Type: %s", a.GetType())
-	fmt.Sprintln("Sount: %s", a.MakeSound())
+	fmt.Println("Name: ", a.GetName())
+	fmt.Println("Age: ", a.GetAge())
+	fmt.Println("Type: ", a.GetType())
+	fmt.Println("Sount: ", a.MakeSound())
 }
