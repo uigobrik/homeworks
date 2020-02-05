@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	"./car"
+	"github.com/uigobrik/homeworks/yanagihara/interface-sample-app/car"
+	// "./car"
 )
 
 func main() {
